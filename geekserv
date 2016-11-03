@@ -253,6 +253,15 @@ _drupal_config() {
     /home/$USER_name/$DRUPAL_folder/sites/default/files
     chmod 755 /home/$USER_name/$DRUPAL_folder/sites/default/files
     chmod 444 /home/$USER_name/$DRUPAL_folder/sites/default/settings.php
+    echo && echo -e "$cyan==> Install Adaptive Theme... $nc" && sleep 2s
+    cd /home/$USER_name/$DRUPAL_folder/themes/
+    wget https://ftp.drupal.org/files/projects/adaptivetheme-8.x-1.0-rc2.tar.gz
+    tar -xvzf adaptivetheme-8.x-1.0-rc2.tar.gz
+    rm adaptivetheme-8.x-1.0-rc2.tar.gz
+    cd /home/$USER_name/$DRUPAL_folder/modules/
+    wget https://ftp.drupal.org/files/projects/at_tools-8.x-1.0-rc2.tar.gz
+    tar -xvzf at_tools-8.x-1.0-rc2.tar.gz
+    rm at_tools-8.x-1.0-rc2.tar.gz
 }
 
 _rutorrent_install() {
