@@ -223,9 +223,9 @@ _drupal_install() {
         mkdir /home/$USER_name/$DRUPAL_folder
     fi
     cd /home/$USER_name/$DRUPAL_folder
-    wget https://ftp.drupal.org/files/projects/drupal-8.2.1.tar.gz
-    tar --strip-components=1 -xvzf drupal-8.2.1.tar.gz
-    rm drupal-8.2.1.tar.gz
+    wget https://ftp.drupal.org/files/projects/drupal-8.2.2.tar.gz
+    tar --strip-components=1 -xvzf drupal-8.2.2.tar.gz
+    rm drupal-8.2.2.tar.gz
     if \
     [ ! -d "/home/${USER_name}/${DRUPAL_folder}/sites/default/files" ]; then
         mkdir /home/$USER_name/$DRUPAL_folder/sites/default/files
